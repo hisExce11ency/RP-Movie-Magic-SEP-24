@@ -1,0 +1,17 @@
+{
+  "name": "rp-movie-magic-sep-24",
+  "version": "1.0.0",
+  "description": "JS Back-End Course Workshop @SoftUni",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  }
+}
