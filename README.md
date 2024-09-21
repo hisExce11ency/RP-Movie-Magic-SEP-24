@@ -14,3 +14,5 @@ JS Back-End Course Workshop @SoftUni
 6. Render home page
 7. Add routes and controlers
 8. Extract partial tmplate
+9. Add service and data layers
+10. Add create page
