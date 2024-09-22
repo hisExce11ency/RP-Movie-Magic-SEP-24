@@ -33,6 +33,26 @@
       "rating": 10,
       "description": "An alien child is evacuated from his dying world and sent to Earth to live among humans. His peace is threatened when other survivors of his home planet invade Earth.",
       "id": "2v4dpnh1fv1m1cd1ozl"
+    },
+    {
+      "title": "Batman Begins",
+      "genre": "Epic",
+      "director": "Christopher Nolan",
+      "year": "2005",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/af/Batman_Begins_Poster.jpg",
+      "rating": 10,
+      "description": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+      "id": "2v4dpnh1mr7m1csnhyc"
+    },
+    {
+      "title": "Alien: Romulus",
+      "genre": "Monster Horror",
+      "director": "Fede Alvarez",
+      "year": 2024,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Bxf4KtHAqKSYqZjiS-FQ2gom3_HeZqf3gQ&s",
+      "rating": 7,
+      "description": "While scavenging the deep ends of a derelict space station, a group of young space colonists come face to face with the most terrifying life form in the universe.",
+      "id": "2v453pnd7mr7m1csnhyc"
     }
   ]
 }
