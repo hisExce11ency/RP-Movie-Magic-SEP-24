@@ -17,3 +17,4 @@ JS Back-End Course Workshop @SoftUni
 9. Add service and data layers
 10. Add create page
 11. Add details page
+12. Add search page
