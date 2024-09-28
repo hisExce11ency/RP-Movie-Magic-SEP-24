@@ -10,7 +10,7 @@ const app = express();
 
 mongooseInit();
 hendlebarsInit(app);
-expressInit
+expressInit(app);
 
 app.use(routes);
 
