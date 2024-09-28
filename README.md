@@ -1,12 +1,14 @@
-
 # RP-Movie-Magic-SEP-24
+
 JS Back-End Course Workshop @SoftUni
 
 ## Start project
+
 `npm run dev` - for developing
 
-## Developing steps
-1. Initial Project Architecture 
+## Developing steps - WorkShop 1
+
+1. Initial Project Architecture
 2. Setup express
 3. Setup handlebars
 4. Add resources
@@ -18,3 +20,9 @@ JS Back-End Course Workshop @SoftUni
 10. Add create page
 11. Add details page
 12. Add search page
+
+## Developing steps - WorkShop 2
+
+1. Extract init files
+2. Setup mongoose
+3. Add models
