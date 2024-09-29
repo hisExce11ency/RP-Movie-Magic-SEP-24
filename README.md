@@ -34,8 +34,12 @@ JS Back-End Course Workshop @SoftUni
 
 **Bonus**:
 
-- [ ]Add model validations
-- [ ] Fix filtering for movies
+- [ ]Rating
+- [ ]Fix filtering for movies
 - [ ]Add character name
 - [ ]Filter cast based on added ones
 - [ ]Atlas
+
+**Next time**:
+
+- [ ]Add model validations
