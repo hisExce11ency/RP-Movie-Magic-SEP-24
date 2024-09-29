@@ -2,9 +2,9 @@ import { Router } from 'express';
 
 import homeController from './controllers/homeController.js'
 
-import movieControler from './controllers/movieControler.js'
+import movieControler from './controllers/movieController.js'
 
-import castControler from './controllers/castControler.js'
+import castControler from './controllers/castController.js'
 
 const router = Router();
 
