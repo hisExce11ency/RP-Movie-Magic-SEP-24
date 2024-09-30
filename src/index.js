@@ -1,5 +1,7 @@
 import express from "express";
 
+import "dotenv/config";
+
 import routes from "./routes.js";
 
 import hendlebarsInit from "../config/handlevarsInit.js";

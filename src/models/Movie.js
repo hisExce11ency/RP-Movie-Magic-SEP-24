@@ -33,11 +33,14 @@ const movieSchema = new Schema({
     imageURL: {
         type: String,
         require: true,
-
     },
     casts: [{
-        type: Types.ObjectId,
-        ref: 'Cast'
+        //_id: false,
+        character: String,
+        cast: {
+            type: Types.ObjectId,
+            ref: 'Cast',
+        },
     }]
 });
 

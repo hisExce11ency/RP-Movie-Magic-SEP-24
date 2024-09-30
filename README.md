@@ -34,11 +34,12 @@ JS Back-End Course Workshop @SoftUni
 
 **Bonus**:
 
-- [ ]Rating
-- [ ]Fix filtering for movies
-- [ ]Add character name
-- [ ]Filter cast based on added ones
+- [X]Rating
+- [X]Fix filtering for movies
+- [X]Filter cast based on added ones
+- [X]Add character name
 - [ ]Atlas
+- [ ]env file
 
 **Next time**:
 
