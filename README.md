@@ -34,28 +34,30 @@ JS Back-End Course Workshop @SoftUni
 
 **Bonus**:
 
-- [x]Rating
-- [x]Fix filtering for movies
-- [x]Filter cast based on added ones
-- [x]Add character name
-- [x]Atlas
-- [x]env file
+- [x] Rating
+- [x] Fix filtering for movies
+- [x] Filter cast based on added ones
+- [x] Add character name
+- [x] Atlas
+- [x] env file
 
 ## Developing Steps - Workshop 3 Authentication
 
 1. Fix bug from previous workshop
 2. Add register page
-   – [] Add user model
-   – [] Add Auth Controler
-   – [] Auth Service
-
-3. Add login page
-4. Add dynamic navigation
+   - [x] Add user model
+   - [x] Add Auth Controler
+   - [x] Auth Service
+3. Hash password before safe
+4. Add login page
+5. Add dynamic navigation
 
    BONUS:
-   – [] Automatic login for registered users
-   – [] Select dropdown with prepopulated value
+
+- [] Automatic login for registered users
+- [] Select dropdown with prepopulated value
 
 ## Next Time
 
+- [] Validate rePassword
 - [] Add model validation
