@@ -48,19 +48,20 @@ JS Back-End Course Workshop @SoftUni
    - [x] Add user model
    - [x] Add Auth Controler
    - [x] Auth Service
-3. Hash password before safe [x]
-4. Add login page
+3. [x] Hash password before safe
+4. [x] Add login page
    - [x] Validate hashed password
-   - [ ] create jwt token
+   - [x] create jwt token
    - [ ] add token to cookie
 5. Add dynamic navigation
 
    BONUS:
 
-- [] Automatic login for registered users
-- [] Select dropdown with prepopulated value
+- [ ] Automatic login for registered users
+- [ ] Make jwt library asynchronouse
+- [ ] Select dropdown with prepopulated value
 
 ## Next Time
 
-- [] Validate rePassword
-- [] Add model validation
+- [ ] Validate rePassword
+- [ ] Add model validation
