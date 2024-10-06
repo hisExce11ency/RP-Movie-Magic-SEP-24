@@ -44,5 +44,17 @@ JS Back-End Course Workshop @SoftUni
 ## Developing Steps - Workshop 3 Authentication
 
 1. Fix bug from previous workshop
-2. Add model validation
-3. Select dropdown with prepopulated value
+2. Add register page
+   – [] Add user model
+   – [] Add Auth Controler
+   – [] Auth Service
+
+3. Add login page
+
+BONUS:
+– [] Automatic login for registered users
+– [] Select dropdown with prepopulated value
+
+## Next Time
+
+- [] Add model validation
