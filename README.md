@@ -48,8 +48,11 @@ JS Back-End Course Workshop @SoftUni
    - [x] Add user model
    - [x] Add Auth Controler
    - [x] Auth Service
-3. Hash password before safe
+3. Hash password before safe [x]
 4. Add login page
+   - [x] Validate hashed password
+   - [ ] create jwt token
+   - [ ] add token to cookie
 5. Add dynamic navigation
 
    BONUS:
