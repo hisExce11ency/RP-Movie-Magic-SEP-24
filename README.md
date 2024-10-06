@@ -50,10 +50,11 @@ JS Back-End Course Workshop @SoftUni
    – [] Auth Service
 
 3. Add login page
+4. Add dynamic navigation
 
-BONUS:
-– [] Automatic login for registered users
-– [] Select dropdown with prepopulated value
+   BONUS:
+   – [] Automatic login for registered users
+   – [] Select dropdown with prepopulated value
 
 ## Next Time
 
