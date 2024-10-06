@@ -35,7 +35,6 @@ const movieSchema = new Schema({
         require: true,
     },
     casts: [{
-        //_id: false,
         character: String,
         cast: {
             type: Types.ObjectId,

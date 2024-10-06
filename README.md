@@ -34,13 +34,15 @@ JS Back-End Course Workshop @SoftUni
 
 **Bonus**:
 
-- [X]Rating
-- [X]Fix filtering for movies
-- [X]Filter cast based on added ones
-- [X]Add character name
-- [ ]Atlas
-- [ ]env file
+- [x]Rating
+- [x]Fix filtering for movies
+- [x]Filter cast based on added ones
+- [x]Add character name
+- [x]Atlas
+- [x]env file
 
-**Next time**:
+## Developing Steps - Workshop 3 Authentication
 
-- [ ]Add model validations
+1. Fix bug from previous workshop
+2. Add model validation
+3. Select dropdown with prepopulated value
