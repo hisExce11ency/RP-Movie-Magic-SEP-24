@@ -3,7 +3,7 @@ import { Router } from 'express';
 import homeController from './controllers/homeController.js'
 import movieControler from './controllers/movieController.js'
 import castControler from './controllers/castController.js'
-import authControler from './controllers/authControler.js'
+import authControler from './controllers/authController.js'
 
 const router = Router();
 
