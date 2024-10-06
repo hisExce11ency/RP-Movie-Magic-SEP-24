@@ -30,7 +30,7 @@ const movieSchema = new Schema({
         require: true,
         maxLength: 500,
     },
-    imageURL: {
+    imageUrl: {
         type: String,
         require: true,
     },
