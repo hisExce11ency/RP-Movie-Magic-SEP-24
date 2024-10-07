@@ -52,8 +52,9 @@ JS Back-End Course Workshop @SoftUni
 4. [x] Add login page
    - [x] Validate hashed password
    - [x] create jwt token `npm i jsonwebtoken`
-   - [ ] add token to cookie `npm i cookie-parser`
-5. [x] Add dynamic navigation
+   - [x] add token to cookie `npm i cookie-parser`
+5. [x] Add Authorisation
+6. [x] Add dynamic navigation
 
    BONUS:
 

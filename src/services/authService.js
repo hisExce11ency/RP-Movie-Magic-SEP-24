@@ -3,8 +3,6 @@ import jwt from "jsonwebtoken"
 
 import User from "../models/User.js";
 
-const SECRET = "asd48hbxshd8y363mndg782ud3dfgsdg"
-
 const register = (email, password) => {
     //TODO: check if user exists
 
@@ -32,7 +30,7 @@ const login = async (email, password) => {
         _id: user._id,
         email,
     };
-    const token = jwt.sign(payload, SECRET, { expiresIn: '4h' });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '4h' });
 
     //TODO: return jwt token
     return token;
