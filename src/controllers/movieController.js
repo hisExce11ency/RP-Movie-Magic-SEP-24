@@ -26,6 +26,8 @@ router.get('/search', async (req, res) => {
 });
 
 router.get('/:movieId/details', async (req, res) => {
+    console.log(req.user?.email);
+
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId).lean();
 

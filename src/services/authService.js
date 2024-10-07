@@ -16,9 +16,6 @@ const login = async (email, password) => {
         throw new Error('User does not exist!');
     }
 
-    console.log(user.password, password);
-
-
     const isValid = await bcrypt.compare(password, user.password);
 
     if (!isValid) {

@@ -10,9 +10,12 @@ export const authMiddleware = (req, res, next) => {
     // TODO: Validate token
     try {
         const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-
-        console.log(decodedToken);
         // TODO: Add user data to request
+        req.user = {
+            _id: decodedToken._id,
+            email: decodedToken.email
+        };
+
         return next();
 
     } catch (err) {
