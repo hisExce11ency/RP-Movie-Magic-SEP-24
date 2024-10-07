@@ -43,17 +43,17 @@ JS Back-End Course Workshop @SoftUni
 
 ## Developing Steps - Workshop 3 Authentication
 
-1. Fix bug from previous workshop
-2. Add register page
+1. [x] Fix bug from previous workshop
+2. [x] Add register page    
    - [x] Add user model
    - [x] Add Auth Controler
    - [x] Auth Service
-3. [x] Hash password before safe
+3. [x] Hash password before safe `npm i bcrypt`
 4. [x] Add login page
    - [x] Validate hashed password
-   - [x] create jwt token
-   - [ ] add token to cookie
-5. Add dynamic navigation
+   - [x] create jwt token `npm i jsonwebtoken`
+   - [ ] add token to cookie `npm i cookie-parser`
+5. [x] Add dynamic navigation
 
    BONUS:
 
