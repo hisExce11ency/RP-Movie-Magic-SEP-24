@@ -43,20 +43,22 @@ JS Back-End Course Workshop @SoftUni
 
 ## Developing Steps - Workshop 3 Authentication
 
-1. [x] Fix bug from previous workshop
-2. [x] Add register page    
+- [x] Fix bug from previous workshop
+- [x] Add register page    
    - [x] Add user model
    - [x] Add Auth Controler
    - [x] Auth Service
-3. [x] Hash password before safe `npm i bcrypt`
-4. [x] Add login page
+- [x] Hash password before safe `npm i bcrypt`
+- [x] Add login page
    - [x] Validate hashed password
    - [x] create jwt token `npm i jsonwebtoken`
    - [x] add token to cookie `npm i cookie-parser`
-5. [x] Add Authorisation
-6. [x] Add owner relation to movie
-7. [x] Add ouner controll buttons in detailes page
-8. [x] Add dynamic navigation
+- [x] Add Authorisation
+- [x] Add owner relation to movie
+- [x] Add ouner controll buttons in detailes page
+- [x] Delete movie
+- [-] Eddit movie
+- [-] Add dynamic navigation
 
    BONUS:
 

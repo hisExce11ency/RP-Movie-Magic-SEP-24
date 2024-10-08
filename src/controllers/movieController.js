@@ -62,6 +62,12 @@ router.get('/:movieId/delete', async (req, res) => {
     res.redirect('/');
 });
 
+router.get('/:movieId/edit', async (req, res) => {
+    const moviId = req.params.moviId;
+
+    res.render('movies/edit');
+});
+
 //Deprecated
 function toArray(documents) {
     return documents.map(document => document.toObject())
