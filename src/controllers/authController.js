@@ -16,7 +16,13 @@ router.post('/register', async (req, res) => {
         return res.status(400).end();
     };
 
-    await authService.register(email, password);
+    try {
+        await authService.register(email, password);
+    } catch (err) {
+        console.log(err.message);
+        return res.end()
+    }
+
     // Automatic login for registered users
     const token = await authService.login(email, password);
     res.cookie('auth', token, { httpOnly: true });
