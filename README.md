@@ -58,8 +58,9 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add ouner controll buttons in detailes page
 - [x] Delete movie
 - [x] Eddit movie
-- [ ] Logout
-- [-] Add dynamic navigation
+- [x] Add dynamic navigation
+- [x] Logout
+- [x] Add Rout guard
 
    BONUS:
 
