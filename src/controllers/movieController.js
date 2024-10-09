@@ -70,7 +70,6 @@ router.get('/:movieId/edit', async (req, res) => {
 
 router.post('/:movieId/edit', async (req, res) => {
     const movieData = req.body;
-    console.log(movieData);
 
     const movieId = req.params.movieId;
 

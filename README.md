@@ -57,7 +57,8 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add owner relation to movie
 - [x] Add ouner controll buttons in detailes page
 - [x] Delete movie
-- [-] Eddit movie
+- [x] Eddit movie
+- [ ] Logout
 - [-] Add dynamic navigation
 
    BONUS:

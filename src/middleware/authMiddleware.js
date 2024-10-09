@@ -11,10 +11,15 @@ export const authMiddleware = (req, res, next) => {
     try {
         const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
         // TODO: Add user data to request
-        req.user = {
+        const user = {
             _id: decodedToken._id,
             email: decodedToken.email
         };
+
+        res.user = user;
+        res.locals.userId = user._id;
+        res.locals.userEmail = user.email;
+        res.locals.isAuthenticated = true;
 
         return next();
 
