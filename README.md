@@ -61,11 +61,12 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add dynamic navigation
 - [x] Logout
 - [x] Add route guard
+- [x] Add user credentials for logedin users to nav bar
 
    BONUS:
 
 - [x] Automatic login for registered users
-- [ ] Make jwt library asynchronouse
+- [x] Make jwt library asynchronous
 - [ ] Select dropdown with prepopulated value
 
 ## Next Time
