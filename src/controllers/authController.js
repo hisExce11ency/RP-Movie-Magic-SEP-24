@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { isEmail }
+import validator from "validator";
 
 import authService from "../services/authService.js";
 
@@ -10,6 +10,11 @@ router.get('/register', (req, res) => {
 });
 router.post('/register', async (req, res) => {
     const { email, password, rePassword } = req.body;
+
+    // Validate email format using validator library
+    if (!validator.isEmail(email)) {
+        return res.status(400).end();
+    };
 
     await authService.register(email, password);
     // Automatic login for registered users

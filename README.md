@@ -71,6 +71,7 @@ JS Back-End Course Workshop @SoftUni
 
 ## Developing Steps - Workshop 4 Validation and Error Handling
 - [x] Introduse validation librery `npm i validator`
+- 
 
 ## Next Time
 
