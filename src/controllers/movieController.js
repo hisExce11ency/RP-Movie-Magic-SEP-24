@@ -68,9 +68,15 @@ router.get('/:movieId/edit', async (req, res) => {
     res.render('movies/edit', { movie });
 });
 
-//Deprecated
-function toArray(documents) {
-    return documents.map(document => document.toObject())
-}
+router.post('/:movieId/edit', async (req, res) => {
+    const movieData = req.body;
+    console.log(movieData);
+
+    const movieId = req.params.movieId;
+
+    await movieService.edit(movieId, movieData);
+
+    res.redirect(`/movies/${movieId}/details`);
+})
 
 export default router;
