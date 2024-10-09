@@ -60,11 +60,11 @@ JS Back-End Course Workshop @SoftUni
 - [x] Eddit movie
 - [x] Add dynamic navigation
 - [x] Logout
-- [x] Add Rout guard
+- [x] Add route guard
 
    BONUS:
 
-- [ ] Automatic login for registered users
+- [x] Automatic login for registered users
 - [ ] Make jwt library asynchronouse
 - [ ] Select dropdown with prepopulated value
 
