@@ -3,7 +3,7 @@ import jwt from "../lib/jwt.js"
 
 import User from "../models/User.js";
 
-const register = async (email, password) => {
+const register = async (email, password, rePassword) => {
     //TODO: check if user exists
     const userCount = await User.countDocuments({ email });
 
@@ -11,7 +11,7 @@ const register = async (email, password) => {
         throw new Error('User already exists!');
     }
 
-    return User.create({ email, password });
+    return User.create({ email, password, rePassword });
 };
 
 const login = async (email, password) => {

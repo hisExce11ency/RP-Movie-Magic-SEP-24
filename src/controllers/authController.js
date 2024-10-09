@@ -12,12 +12,18 @@ router.post('/register', async (req, res) => {
     const { email, password, rePassword } = req.body;
 
     // Validate email format using validator library
-    if (!validator.isEmail(email)) {
-        return res.status(400).end();
-    };
+    //if (!validator.isEmail(email)) {
+    //    return res.status(400).end();
+    //};
+
+    // Validate if repassword is the same
+    //if (password !== rePassword) {
+    //    return res.status(400).end();
+    //}
+
     //TODO: Check if user exists
     try {
-        await authService.register(email, password);
+        await authService.register(email, password, rePassword);
     } catch (err) {
         console.log(err.message);
         return res.end()

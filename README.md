@@ -73,6 +73,8 @@ JS Back-End Course Workshop @SoftUni
 - [x] Introduse validation librery `npm i validator`
 - [x] Add validation in User schema and handle error 
 - [x] Add error handling for existing user
+- [x] Add validation in Movie schema as per project requirements
+- [ ] Add validation in Cast schema as per project requirements
 
 ## Next Time
 

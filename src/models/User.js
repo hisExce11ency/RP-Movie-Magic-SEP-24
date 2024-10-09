@@ -7,13 +7,22 @@ const userSchema = new Schema({
     email: {
         type: String,
         unique: true, //Index
+        validate: [/@[A-Za-z0-9+]+.[A-Za-z0-9+]$/, 'Invalid email address!'],
         minLength: [10, 'Email must be at least 10 characters long!'],
     },
     password: {
         type: String,
+        validate: [/^[A-Za-z0-9]+$/, 'Invalid password characters!'],
         minLength: [6, 'Your password is too short!']
-    }
+    },
 });
+
+userSchema.virtual('rePassword')
+    .set(function (value) {
+        if (value !== this.rePassword) {
+            throw new Error('Password missmatch!');
+        }
+    });
 
 //Hash password before safe
 userSchema.pre('save', async function () {
