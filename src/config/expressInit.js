@@ -1,6 +1,6 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-import { authMiddleware } from "../views/midleware/authMiddleware.js";
+import { authMiddleware } from "../middleware/authMiddleware.js";
 
 export default function expressInit(app) {
     app.use(express.urlencoded({ extended: false }));

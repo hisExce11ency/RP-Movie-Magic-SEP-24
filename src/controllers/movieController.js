@@ -27,7 +27,6 @@ router.get('/search', async (req, res) => {
 });
 
 router.get('/:movieId/details', async (req, res) => {
-    console.log(req.user?.email);
 
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId).lean();
@@ -63,9 +62,10 @@ router.get('/:movieId/delete', async (req, res) => {
 });
 
 router.get('/:movieId/edit', async (req, res) => {
-    const moviId = req.params.moviId;
+    const movieId = req.params.movieId;
+    const movie = await movieService.getOne(movieId).lean();
 
-    res.render('movies/edit');
+    res.render('movies/edit', { movie });
 });
 
 //Deprecated
