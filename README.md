@@ -61,15 +61,19 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add dynamic navigation
 - [x] Logout
 - [x] Add route guard
-- [x] Add user credentials for logedin users to nav bar
 
    BONUS:
 
+- [x] Add user credentials for logedin users to nav bar
 - [x] Automatic login for registered users
 - [x] Make jwt library asynchronous
-- [ ] Select dropdown with prepopulated value
+
+
+## Developing Steps - Workshop 4 Validation and Error Handling
+- [x] Introduse validation librery `npm i validator`
 
 ## Next Time
 
+- [ ] Select dropdown with prepopulated value
 - [ ] Validate rePassword
 - [ ] Add model validation
