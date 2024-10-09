@@ -15,7 +15,7 @@ router.post('/register', async (req, res) => {
     if (!validator.isEmail(email)) {
         return res.status(400).end();
     };
-
+    //TODO: Check if user exists
     try {
         await authService.register(email, password);
     } catch (err) {
