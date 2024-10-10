@@ -18,8 +18,11 @@ router.post('/create', isAuth, async (req, res) => {
     try {
         await movieService.create(movieData, ownerId);
     } catch (err) {
-        console.dir(Object.values(err.errors)[0]?.message);
-        return res.end();
+        // Challenge: Show multi errors
+        const errorMessage = Object.values(err.errors)[0]?.message;
+        //console.dir(Object.values(err.errors)[0]?.message);
+        //return res.end();
+        return res.render('movies/create', { error: errorMessage, moive: movieData });
     }
 
     res.redirect('/');
@@ -61,6 +64,15 @@ router.post('/:movieId/attach', isAuth, async (req, res) => {
 
 router.get('/:movieId/delete', isAuth, async (req, res) => {
     const movieId = req.params.movieId;
+
+    // Chck if owner
+    const movie = await movieService.getOne(movieId).lean();
+
+    if (movie.owner != req.user?._id) {
+        // return res.render('movies/details', { movie, isOwner: false, error: ' Unauthorised to delete this movie!' });
+        res.setError('Unauthorised to delete this movie!');
+        return res.redirect('/404');
+    };
 
     await movieService.remove(movieId);
 

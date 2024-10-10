@@ -76,10 +76,17 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add validation in Movie schema as per project requirements
 - [x] Add validation in Cast schema as per project requirements
 - [x] Add error container in the main layaot 
-- [ ] Add user friendly error handling
+- [x] Update CSS files from provided resources
+- [x] Add user friendly error handling
 
+    BONUS:
+    - [x]  Add error handling with redirecting to a different page(404) than the request page.`npm i express-session`
 ## Next Time
 
 - [ ] Select dropdown with prepopulated value
-- [ ] Validate rePassword
-- [ ] Add model validation
+- [x] Validate rePassword
+- [x] Add model validation
+
+## Challenge:
+
+- [ ] Show multi errors

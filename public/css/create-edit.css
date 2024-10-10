@@ -51,7 +51,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #create-btn,
-#attach-button,
+#attach-btn,
 #edit-btn {
   border: 1px solid black;
   background: #6d6875;
@@ -64,7 +64,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #create-btn:hover,
-#attach-button:hover,
+#attach-btn:hover,
 #edit-btn:hover {
   background: rgba(20, 20, 20, 0.8);
   padding: 10px 80px;
@@ -76,7 +76,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #edit-button,
 #delete-button,
-#attach-button {
+#attach-btn {
   border: 1px solid black;
   background: #b5838d;
   font-size: 18px;
@@ -89,8 +89,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
-#attach-button:hover,
 #edit-button:hover,
+#attach-btn:hover,
 #delete-button:hover {
   background: rgba(20, 20, 20, 0.8);
   padding: 10px 80px;
