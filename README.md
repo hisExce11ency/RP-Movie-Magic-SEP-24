@@ -74,8 +74,8 @@ JS Back-End Course Workshop @SoftUni
 - [x] Add validation in User schema and handle error 
 - [x] Add error handling for existing user
 - [x] Add validation in Movie schema as per project requirements
-- [ ] Add validation in Cast schema as per project requirements
-- [ ] Add error container in the main layaot 
+- [x] Add validation in Cast schema as per project requirements
+- [x] Add error container in the main layaot 
 - [ ] Add user friendly error handling
 
 ## Next Time
