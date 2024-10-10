@@ -4,19 +4,19 @@ const movieSchema = new Schema({
     title: {
         type: String,
         require: true,
-        minLength: 5,
+        minLength: [5, 'Title should be at least 5 characters!'],
         validate: [/^[A-Za-z0-9 ]+$/, 'Title can contain only alphanumeric characters!'],
     },
     genre: {
         type: String,
         require: true,
-        minLength: 5,
+        minLength: [5, 'Genre should be at least 5 characters!'],
         validate: [/^[A-Za-z0-9 ]+$/, 'Genre can contain only alphanumeric characters!'],
     },
     director: {
         type: String,
         require: true,
-        minLength: 5,
+        minLength: [5, 'Director\'s name should be at least 5 characters!'],
         validate: [/^[A-Za-z0-9 ]+$/, 'Director can contain only alphanumeric characters!'],
     },
     year: {
@@ -27,14 +27,23 @@ const movieSchema = new Schema({
     },
     rating: {
         type: Number,
-        require: true,
+        validate: {
+            validator: function (value) {
+                if (this.year >= 2000) {
+                    return !!value;
+                }
+
+                return true;
+            },
+            message: 'Rating is required for movies after year 2000!'
+        },
         min: [1, 'Rating should be at least 1!'],
         max: [5, 'Rating can not be higher than 5!'],
     },
     description: {
         type: String,
         require: true,
-        validation: [/^[A-Za-z0-9 ]+$/, 'Description can contai nonly alphanumeric characters!'],
+        validation: [/^[A-Za-z0-9 ]+$/, 'Description can contain nonly alphanumeric characters!'],
         minLength: [20, 'Description should be at least 20 characcters!'],
     },
     imageUrl: {
@@ -43,7 +52,12 @@ const movieSchema = new Schema({
         validate: [/^https?:\/\//, 'Invalid image url!'],
     },
     casts: [{
-        character: String,
+        character: {
+            type: String,
+            require: true,
+            minLength: [5, 'Character should be at least 5 characters!'],
+            validate: [/^[A-Za-z0-9 ]+$/, 'Character can contain only alphanumeric characters!'],
+        },
         cast: {
             type: Types.ObjectId,
             ref: 'Cast',
