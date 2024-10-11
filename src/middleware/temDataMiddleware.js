@@ -1,5 +1,5 @@
 export const tempData = (req, res, next) => {
-
+    // Error that will presist after two http request cycles
     res.setError = (message) => {
         req.session.error = {
             message,

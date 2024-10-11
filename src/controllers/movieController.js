@@ -3,6 +3,7 @@ import { Router } from "express";
 import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middleware/authMiddleware.js";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const router = Router();
 
@@ -19,7 +20,7 @@ router.post('/create', isAuth, async (req, res) => {
         await movieService.create(movieData, ownerId);
     } catch (err) {
         // Challenge: Show multi errors
-        const errorMessage = Object.values(err.errors)[0]?.message;
+        const errorMessage = getErrorMessage(err);
         //console.dir(Object.values(err.errors)[0]?.message);
         //return res.end();
         return res.render('movies/create', { error: errorMessage, moive: movieData });

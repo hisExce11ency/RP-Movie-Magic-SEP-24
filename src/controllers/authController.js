@@ -2,6 +2,7 @@ import { Router } from "express";
 import validator from "validator";
 
 import authService from "../services/authService.js";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const router = Router();
 
@@ -25,8 +26,7 @@ router.post('/register', async (req, res) => {
     try {
         await authService.register(email, password, rePassword);
     } catch (err) {
-        console.log(err.message);
-        return res.end()
+        return res.render('auth/register', { error: getErrorMessage(err), email });
     }
 
     // Automatic login for registered users
